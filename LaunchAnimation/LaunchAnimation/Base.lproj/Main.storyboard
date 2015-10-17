@@ -18,7 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="72e-Yb-Lo2"/>
+                    <navigationItem key="navigationItem" id="72e-Yb-Lo2">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="gTZ-Xi-JYG">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o2S-3T-SfR">
+                                <rect key="frame" x="540" y="2" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="logo"/>
+                                <connections>
+                                    <action selector="rightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="evH-wt-ZfA"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,4 +54,7 @@
             <point key="canvasLocation" x="233" y="804"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="500" height="500"/>
+    </resources>
 </document>
