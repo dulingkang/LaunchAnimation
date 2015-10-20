@@ -11,9 +11,9 @@ import Foundation
 import UIKit
 
 class TransitionAnimation : NSObject, UIViewControllerAnimatedTransitioning {
-    var transitionCtx : UIViewControllerContextTransitioning?
+    var transitionCtx : UIViewControllerContextTransitioning!
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 0.7
+        return 1.7
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -27,16 +27,15 @@ class TransitionAnimation : NSObject, UIViewControllerAnimatedTransitioning {
         let duration = self.transitionDuration(transitionContext)
         
         UIView.animateWithDuration(duration, animations:{
-            fromVC!.view.transform = CGAffineTransformMakeRotation(30)
-            fromVC!.view.transform = CGAffineTransformMakeTranslation(Constant.screenWidth, 0)
+            fromVC!.view.frame = CGRectMake(Constant.screenWidth, 0, Constant.screenWidth, Constant.screenHeight)
             }){
                 finished in
-                transitionContext.completeTransition(transitionContext.transitionWasCancelled())
+                transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
         }
     }
     
     func animationEnded(transitionCompleted: Bool) {
-        self.transitionCtx!.completeTransition(self.transitionCtx!.transitionWasCancelled())
+        self.transitionCtx!.completeTransition(!self.transitionCtx!.transitionWasCancelled())
         self.transitionCtx!.viewControllerForKey(UITransitionContextFromViewControllerKey)!.view = nil
     }
     
