@@ -35,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="1043" y="804"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Custom NavigationVC-->
         <scene sceneID="CMM-9b-0ih">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3vp-FK-uOG" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3vp-FK-uOG" customClass="CustomNavigationVC" customModule="LaunchAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fQU-ey-6ph">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

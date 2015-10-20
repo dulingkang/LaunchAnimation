@@ -13,17 +13,17 @@ class CustomNavigationVC: UINavigationController, UIGestureRecognizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let gesture = self.interactivePopGestureRecognizer
-//        gesture!.enabled = false
-//        let gestureView = gesture!.view
-//        
-//        let panGesture = UIPanGestureRecognizer.init()
-//        panGesture.delegate = self
-//        panGesture.maximumNumberOfTouches = 1
-//        gestureView!.addGestureRecognizer(panGesture)
-//        
+        let gesture = self.interactivePopGestureRecognizer
+        gesture!.enabled = false
+        let gestureView = gesture!.view
+        
+        let panGesture = UIPanGestureRecognizer.init()
+        panGesture.delegate = self
+        panGesture.maximumNumberOfTouches = 1
+        gestureView!.addGestureRecognizer(panGesture)
+//
         let customNavigationTransition = CustomTransition.init(vc: self)
-//        panGesture.addTarget(customNavigationTransition, action: "hand")
+        panGesture.addTarget(customNavigationTransition, action: "hand")
     }
     
     func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
