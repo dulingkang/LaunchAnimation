@@ -13,7 +13,7 @@ import UIKit
 class TransitionAnimation : NSObject, UIViewControllerAnimatedTransitioning {
     var transitionCtx : UIViewControllerContextTransitioning!
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 1.7
+        return 0.8
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -28,16 +28,11 @@ class TransitionAnimation : NSObject, UIViewControllerAnimatedTransitioning {
         
         UIView.animateWithDuration(duration, animations:{
             fromVC!.view.frame = CGRectMake(Constant.screenWidth, 0, Constant.screenWidth, Constant.screenHeight)
+            fromVC!.view.alpha = 0
             }){
                 finished in
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
         }
     }
-    
-    func animationEnded(transitionCompleted: Bool) {
-        self.transitionCtx!.completeTransition(!self.transitionCtx!.transitionWasCancelled())
-        self.transitionCtx!.viewControllerForKey(UITransitionContextFromViewControllerKey)!.view = nil
-    }
-    
     
 }

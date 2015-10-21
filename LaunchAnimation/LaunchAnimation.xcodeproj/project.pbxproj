@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3A04C8391BCD189900EB91D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04C8381BCD189900EB91D5 /* AppDelegate.swift */; };
-		3A04C83B1BCD189900EB91D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04C83A1BCD189900EB91D5 /* ViewController.swift */; };
+		3A04C83B1BCD189900EB91D5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04C83A1BCD189900EB91D5 /* FirstViewController.swift */; };
 		3A04C83E1BCD189900EB91D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A04C83C1BCD189900EB91D5 /* Main.storyboard */; };
 		3A04C8401BCD189900EB91D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A04C83F1BCD189900EB91D5 /* Assets.xcassets */; };
 		3A04C8431BCD189900EB91D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A04C8411BCD189900EB91D5 /* LaunchScreen.storyboard */; };
-		3AF574EB1BD0E8E6004AD9D4 /* CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF574EA1BD0E8E6004AD9D4 /* CustomTransition.swift */; settings = {ASSET_TAGS = (); }; };
-		3AF574ED1BD0EC87004AD9D4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF574EC1BD0EC87004AD9D4 /* SecondViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3A63459B1BD7A81E00BD8F49 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63459A1BD7A81E00BD8F49 /* SecondViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3AF574F51BD11457004AD9D4 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF574F41BD11457004AD9D4 /* Define.swift */; settings = {ASSET_TAGS = (); }; };
 		3AF574F71BD1ED16004AD9D4 /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF574F61BD1ED16004AD9D4 /* TransitionAnimation.swift */; settings = {ASSET_TAGS = (); }; };
 		3AF574F91BD1F597004AD9D4 /* CustomNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF574F81BD1F597004AD9D4 /* CustomNavigationVC.swift */; settings = {ASSET_TAGS = (); }; };
@@ -22,13 +21,12 @@
 /* Begin PBXFileReference section */
 		3A04C8351BCD189900EB91D5 /* LaunchAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A04C8381BCD189900EB91D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A04C83A1BCD189900EB91D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A04C83A1BCD189900EB91D5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		3A04C83D1BCD189900EB91D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A04C83F1BCD189900EB91D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A04C8421BCD189900EB91D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A04C8441BCD189900EB91D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AF574EA1BD0E8E6004AD9D4 /* CustomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransition.swift; sourceTree = "<group>"; };
-		3AF574EC1BD0EC87004AD9D4 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3A63459A1BD7A81E00BD8F49 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3AF574F41BD11457004AD9D4 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		3AF574F61BD1ED16004AD9D4 /* TransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimation.swift; sourceTree = "<group>"; };
 		3AF574F81BD1F597004AD9D4 /* CustomNavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationVC.swift; sourceTree = "<group>"; };
@@ -64,15 +62,14 @@
 		3A04C8371BCD189900EB91D5 /* LaunchAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				3A63459A1BD7A81E00BD8F49 /* SecondViewController.swift */,
 				3AF574F41BD11457004AD9D4 /* Define.swift */,
 				3A04C8381BCD189900EB91D5 /* AppDelegate.swift */,
-				3A04C83A1BCD189900EB91D5 /* ViewController.swift */,
+				3A04C83A1BCD189900EB91D5 /* FirstViewController.swift */,
 				3A04C83C1BCD189900EB91D5 /* Main.storyboard */,
 				3A04C83F1BCD189900EB91D5 /* Assets.xcassets */,
 				3A04C8411BCD189900EB91D5 /* LaunchScreen.storyboard */,
 				3A04C8441BCD189900EB91D5 /* Info.plist */,
-				3AF574EA1BD0E8E6004AD9D4 /* CustomTransition.swift */,
-				3AF574EC1BD0EC87004AD9D4 /* SecondViewController.swift */,
 				3AF574F61BD1ED16004AD9D4 /* TransitionAnimation.swift */,
 				3AF574F81BD1F597004AD9D4 /* CustomNavigationVC.swift */,
 			);
@@ -150,9 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF574ED1BD0EC87004AD9D4 /* SecondViewController.swift in Sources */,
-				3A04C83B1BCD189900EB91D5 /* ViewController.swift in Sources */,
-				3AF574EB1BD0E8E6004AD9D4 /* CustomTransition.swift in Sources */,
+				3A63459B1BD7A81E00BD8F49 /* SecondViewController.swift in Sources */,
+				3A04C83B1BCD189900EB91D5 /* FirstViewController.swift in Sources */,
 				3AF574F51BD11457004AD9D4 /* Define.swift in Sources */,
 				3AF574F91BD1F597004AD9D4 /* CustomNavigationVC.swift in Sources */,
 				3A04C8391BCD189900EB91D5 /* AppDelegate.swift in Sources */,

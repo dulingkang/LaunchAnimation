@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FirstViewController.swift
 //  LaunchAnimation
 //
 //  Created by ShawnDu on 15/10/13.
@@ -8,11 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.grayColor()
+        self.view.backgroundColor = UIColor.blueColor()
+        let iconSmallImage = UIImage(named: "iconLabel")
+        let imageView = UIImageView.init(frame: CGRectMake((Constant.screenWidth - iconSmallImage!.size.width)/2, (Constant.screenHeight - iconSmallImage!.size.height)/2, iconSmallImage!.size.width, iconSmallImage!.size.height))
+        imageView.image = iconSmallImage
+        self.view.addSubview(imageView)
     }
     
     @IBAction func rightButtonPressed(sender: UIButton) {
