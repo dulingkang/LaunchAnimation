@@ -16,10 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let minLauchIconWidth: Int = 50
     let maxLauchIconWidth: Int = 2000
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        let navigationVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController()
         self.window!.makeKeyAndVisible()
         self.window!.backgroundColor = UIColor(red: 0.047, green:0.996,blue:0.447, alpha:1)
-        
-        let navigationVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController()
         self.window!.rootViewController = navigationVC
         //logo mask
         navigationVC!.view.layer.mask = CALayer()
